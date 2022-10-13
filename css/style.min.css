@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/NunitoSans/NunitoSans-Regular.woff2") format("woff2"), url("../fonts/NunitoSans/NunitoSans-Regular.woff") format("woff");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/NunitoSans/NunitoSans-Italic.woff2") format("woff2"), url("../fonts/NunitoSans/NunitoSans-Italic.woff") format("woff");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "YesevaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/YesevaOne/YesevaOne-Regular.woff2") format("woff2"), url("../fonts/YesevaOne/YesevaOne-Regular.woff") format("woff");
+  font-display: swap
+}
+
+ul,
+ol {
+  padding: 0
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0
+}
+
+ul {
+  list-style: none
+}
+
+img {
+  max-width: 100%;
+  display: block
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+  border: transparent
+}
+
+address {
+  font-style: normal
+}
+
+input,
+button {
+  padding: 0
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+html,
+body {
+  height: 100%
+}
+
+img {
+  -o-object-fit: cover;
+  object-fit: cover
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+
+body {
+  font-family: "NunitoSans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #131313
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto
+}
+
+.projects__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.projects__title {
+  margin-bottom: 34px;
+  font-size: 27px;
+  line-height: 1.3;
+  color: #e3b873;
+  font-family: "YesevaOne", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  position: relative
+}
+
+.projects__title::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icons/line.svg);
+  width: 92px;
+  height: 1px;
+  left: 35%;
+  bottom: 18px
+}
+
+.projects__descr {
+  width: 442px;
+  height: 482px;
+  position: relative;
+  margin-top: 176px;
+  margin-right: 50px
+}
+
+.projects__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 156px 213px;
+  grid-template-columns: 156px 213px;
+  -ms-grid-rows: 73px 73px;
+  grid-template-rows: 73px 73px;
+  gap: 34px;
+  margin-bottom: 65px;
+  position: relative
+}
+
+.title__line {
+  position: absolute;
+  left: 161px;
+  top: 229px
+}
+
+.title__info {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 42px
+}
+
+.cards__title {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 9px;
+  color: #e3b873;
+  text-transform: uppercase
+}
+
+.cards__text {
+  font-size: 13px;
+  line-height: 1.6;
+  position: absolute;
+  opacity: 0
+}
+
+.cards__active {
+  opacity: 1;
+  font-size: 13px;
+  line-height: 1.6
+}
+
+.slider__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 205px;
+  height: 13px
+}
+
+.slider__dots {
+  width: 63px;
+  height: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap
+}
+
+.dot_item {
+  margin-right: 17px;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: .3;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+  cursor: pointer
+}
+
+.dot__active {
+  opacity: 1
+}
+
+.dot_item:hover {
+  opacity: 1
+}
+
+.dot_item:last-child {
+  margin: 0
+}
+
+.slider__arrow:last-child {
+  margin: 0 0 0 29px
+}
+
+.slider {
+  width: 679px
+}
+
+.slider__arrow {
+  margin: 0 29px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer
+}
+
+.slider__title {
+  font-size: 14px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, .3);
+  margin-right: 60px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: "YesevaOne";
+  padding-bottom: 6px;
+  -webkit-transition: color .5s, border-color .5s;
+  -o-transition: color .5s, border-color .5s;
+  transition: color .5s, border-color .5s;
+  border-bottom: 1px solid transparent
+}
+
+.slider__title:hover {
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873
+}
+
+.slider__title:last-child {
+  margin-right: 0
+}
+
+.slider__titles {
+  margin-top: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 45px;
+  height: 24px;
+  cursor: pointer
+}
+
+.slider__images {
+  width: 679px;
+  height: 482px;
+  position: relative
+}
+
+.slider .slider__images .image {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 800ms ease;
+  -o-transition: opacity 800ms ease;
+  transition: opacity 800ms ease
+}
+
+.slider .slider__images .image.active {
+  opacity: 1
+}
+
+.title__active {
+  color: #e3b873;
+  padding-bottom: 6px;
+  border-color: #e3b873
+}
